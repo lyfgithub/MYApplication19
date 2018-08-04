@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:D="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--D:backgroundTint="#56abe4" 背景色-->
+    <!--D:rippleColor="#55000000" 点击时的颜色-->
+    <!--D:elevation="6dp" 没有点击时显示的阴影大小 elevation:高度，高度产生的阴影-->
+    <!--D:pressedTranslationZ="12dp"点击时的阴影大小-->
+    <!--D:fabSize="mini" 控件的大小-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        D:backgroundTint="#56abe4"
+        D:borderWidth="0dp"
+        D:elevation="5dp"
+        D:fabSize="normal"
+        D:pressedTranslationZ="59dp"
+        D:rippleColor="#550000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:src="@mipmap/ic_launcher">
+    </android.support.design.widget.FloatingActionButton>
+</LinearLayout>

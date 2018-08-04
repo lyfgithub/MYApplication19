@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="lyf.lyfdemos2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- 默认启动 -->
+        <activity android:name="lyf.android.ApiDemosManager" >
+            <intent-filter>
+                <!-- 决定应用程序最先启动的Activity -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 设为默认 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 决定应用程序是否显示在launcher桌面程序列表里  必须-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- =============================================================== -->
+        <!--本APP的包名 demo-->
+        <activity
+            android:name="lyf.lyfdemos2.MainActivity"
+            android:label="lyfdemos2/MainActivity">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <!--抽屉侧滑布局-->
+        <activity
+            android:name="lyf.drawerlayoutstudy.DrawerLayoutDemo"
+            android:label="DrawerLayout[侧滑布局]/DrawerLayoutDemo">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <!--选项卡布局-->
+        <activity
+            android:name="lyf.tablayoutdemo.TabLayoutDemo"
+            android:label="tablayoutdemo[选项卡]/DrawerLayoutDemo">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!--文本输入布局-->
+        <activity
+            android:name="lyf.textinputlayout.TextinputLayoutDemo"
+            android:label="textinputlayout[文本输入布局]/TextinputLayoutDemo">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!--文本输入布局-->
+        <activity
+            android:name="lyf.floatingActionButton.FloatingActionButtonDemo"
+            android:label="floatingActionButton[浮动圆形按钮]/FloatingActionButtonDemo">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!--刷新布局布局-->
+        <activity
+            android:name="lyf.swiperefreshlayout.SwipeRefreshLayoutDemo"
+            android:label="swiperefreshlayout[刷新布局]/SwipeRefreshLayoutDemo">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!--RecycleView-->
+        <activity
+            android:name="lyf.recyclerviewdemo.RecyclerViewDemo"
+            android:label="recyclerviewdemo[复用视图]/RecyclerViewDemo">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
