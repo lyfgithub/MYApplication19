@@ -1,0 +1,3 @@
+//include ':app', ':bindremotesrvice', ':fragmentdemo', ':designsupportlibrary', ':drawerlayoutstudy', ':lyfdemos2', ':mytoolbar', ':swiperefreshlayoutdemo', ':SeeNews', ':BuildingBlocks', ':mymvp', ':lyfdemolove', ':coordinatorlayoutdemo', ':lyfoffice', ':lyfresource', ':test'
+//include ':testToolBar'
+include ':test', ':LyfGlideDemo'
