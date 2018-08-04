@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.myapplication19">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+<!--        <activity android:name=".MyStartServiceDemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>-->
+
+<!--        <activity android:name="com.myapplication19.MyBindServiceDemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>-->
+
+<!--        <activity android:name="com.mybindservice2.MyBindServiceDemo2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>-->
+
+        <activity android:name="com.myapplication19.MyIntentServiceDemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyStartService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".MyIntentService"
+            android:exported="false">
+        </service>
+        <service
+            android:name=".MyBindService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service android:name="com.mybindservice2.MyBindService2"></service>
+
+        <!--远程服务-->
+        <service android:name="com.mybindservice3.MyBindService3">
+            <intent-filter>
+                <action android:name="com.mybindservice3.MyBindService3"></action>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
