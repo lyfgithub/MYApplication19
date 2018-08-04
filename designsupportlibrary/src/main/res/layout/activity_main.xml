@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:D="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lyf.designsupportlibrary.MainActivity">
+
+    <!--D:backgroundTint="#56abe4" 背景色-->
+    <!--D:rippleColor="#55000000" 点击时的颜色-->
+    <!--D:elevation="6dp" 没有点击时显示的阴影大小 elevation:高度，高度产生的阴影-->
+    <!--D:pressedTranslationZ="12dp"点击时的阴影大小-->
+    <!--D:fabSize="mini" 控件的大小-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@mipmap/ic_launcher"
+        D:rippleColor="#550000"
+        D:backgroundTint="#56abe4"
+        D:elevation="5dp"
+        D:pressedTranslationZ="59dp"
+        D:borderWidth="0dp"
+        D:fabSize="normal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+    </android.support.design.widget.FloatingActionButton>
+
+<!--    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.design.widget.TextInputLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            D:tabTextColor="#000066"
+            D:tabSelectedTextColor="#000000"
+            D:tabIndicatorColor="#000066"
+            D:tabIndicatorHeight="1dp"
+            android:background="#55000000">
+        </android.support.design.widget.TabLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#22000000">
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
