@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--====添加======================================================-->
+    <!--白天模式-->
+    <style name="Theme.AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Material Theme -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="stateSelector">@color/state_selector_light</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="accentColor">@color/accent</item>
+        <item name="iconColor">@android:color/black</item>
+        <item name="windowBackground">@color/window_background</item>
+        <item name="fabCircleColor">@color/fabCircleColor_light</item>
+    </style>
+
+    <!--晚间模式-->
+    <style name="Theme.AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <!-- Material Theme -->
+        <item name="colorPrimary">@color/colorPrimaryDarkTheme</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDarkTheme</item>
+        <item name="colorAccent">@color/colorAccentDarkTheme</item>
+        <item name="android:windowBackground">@color/window_background_dark</item>
+        <item name="accentColor">@color/colorAccentDarkTheme</item>
+        <item name="iconColor">@android:color/white</item>
+        <item name="windowBackground">@color/window_background_dark</item>
+        <item name="stateSelector">@color/state_selector_dark</item>
+        <item name="fabCircleColor">@color/fabCircleColor_dark</item>
+    </style>
+
+    <style name="Root.Theme.AppTheme.Light" parent="Theme.AppTheme.Light">
+        <!-- 解决activity切换时的黑屏问题 -->
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="Base.Theme.AppTheme.Light" parent="Theme.AppTheme.Light">
+        <!-- 解决activity切换时的黑屏问题 -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Root.Theme.AppTheme.Dark" parent="Theme.AppTheme.Dark">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="Base.Theme.AppTheme.Dark" parent="Theme.AppTheme.Dark">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>
